@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Hexo</title>
-  <meta name="keywords" content="">
-  <meta name="description" content="Hexo">
+  <title>C/C++基本使用 | Hexo</title>
+  <meta name="keywords" content=" c/c++ , dir/file ">
+  <meta name="description" content="C/C++基本使用 | Hexo">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="1.移动文件(更改文件名)#include &lt;stdio.h&gt;  &#x2F;* 若成功，返回0；若出错，返回-1 *&#x2F; int rename(const char *oldname, const char *newname); int renameat(int oldfd, const char *oldname, int newfd, const char *newname); 2.目录2.">
 <meta property="og:type" content="article">
@@ -52,7 +52,7 @@
 </div>
 
 <body>
-<aside class="nav mobile">
+<aside class="nav">
     <div class="nav-left">
         <a href="/" class="avatar_target">
     <img class="avatar" src="/img/yx.jpg" />
@@ -237,12 +237,62 @@
         </div>
     </div>
 </aside>
-<div class="post index">
+<div class="post">
     <div class="pjax">
-        <article class="index">
-            <div class="toc-ref">
+        <article id="post-basic_c" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Why-Blog"><span class="toc-text">Why Blog</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#对博客的理解"><span class="toc-text">对博客的理解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#博客平台"><span class="toc-text">博客平台</span></a></li></ol></li></ol>
+        <h1 class="article-title">C/C++基本使用</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        
+        <span class="tag">
+            
+            <a class="color1">c/c++</a>
+            
+            <a class="color4">dir/file</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+        创建时间:<time class="date" title='更新时间: 2020-02-26 00:15:26'>2020-02-26 00:15</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读:<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+        <span class="top-comment" title="跳转至评论区">
+            <a href="#comments">
+                评论:<span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </a>
+        </span>
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-移动文件-更改文件名"><span class="toc-text">1.移动文件(更改文件名)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-目录"><span class="toc-text">2.目录</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-读"><span class="toc-text">2.1 读</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-创建"><span class="toc-text">2.2 创建</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -255,30 +305,64 @@
     }
 </style>
 </div>
-            <h1 id="Why-Blog"><a href="#Why-Blog" class="headerlink" title="Why Blog"></a>Why Blog</h1><p>layout/indexs.md</p>
-<h2 id="对博客的理解"><a href="#对博客的理解" class="headerlink" title="对博客的理解"></a>对博客的理解</h2><p>喜欢写Blog的人，会经历三个阶段。</p>
-<blockquote>
-<p>第一阶段，刚接触Blog，觉得很新鲜，试着选择一个免费空间来写。</p>
-</blockquote>
-<blockquote>
-<p>第二阶段，发现免费空间限制太多，就自己购买域名和空间，搭建独立博客。</p>
-</blockquote>
-<blockquote>
-<p>第三阶段，觉得独立博客的管理太麻烦，最好在保留控制权的前提下，让别人来管，自己只负责写文章。</p>
-</blockquote>
-<p>我们每个人的在网络上产生的数据越来越多，这些信息是我们在互联网上存在过的痕迹，值得我们认真对待。但是它们被分散分布在各个网站上。很多时候我们很难将它们聚合在一起，而且各个网站的信息排布方式也没有办法自由控制，所以我们需要一个可以由自己主宰的空间——博客。</p>
-<p>通过博客，我们可以记录自己的生活和成长的轨迹。它不像 Twitter 那样碎片化，也不像 Facebook 那样关系化，它是私人的空间。</p>
-<h2 id="博客平台"><a href="#博客平台" class="headerlink" title="博客平台"></a>博客平台</h2><p>这个博客通过 <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> 生成，部署在 <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a>，主题 <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank" rel="noopener">3-hexo</a> 已经在github上开源</p>
-<p>主要功能：</p>
-<ul>
-<li>搜索支持文章标题、标签(#标签)、作者(@作者)</li>
-<li>pad/手机等移动端适配</li>
-<li>页面全局快捷键 <a href='http://yelog.org/2017/03/24/3-hexo-shortcuts/' target="_blank" rel="noopener">3-hexo快捷键说明</a></li>
-</ul>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="1-移动文件-更改文件名"><a href="#1-移动文件-更改文件名" class="headerlink" title="1.移动文件(更改文件名)"></a>1.移动文件(更改文件名)</h2><pre><code class="c">#include &lt;stdio.h&gt;
 
-        </article>
-        
-        
+/* 若成功，返回0；若出错，返回-1 */
+int rename(const char *oldname, const char *newname);
+int renameat(int oldfd, const char *oldname, int newfd, const char *newname);</code></pre>
+<h2 id="2-目录"><a href="#2-目录" class="headerlink" title="2.目录"></a>2.目录</h2><h3 id="2-1-读"><a href="#2-1-读" class="headerlink" title="2.1 读"></a>2.1 读</h3><pre><code class="c">#include &lt;dirent.h&gt;
+
+/* 若成功，返回指针，出错返回NULL */
+DIR *opendir(const char *pathname);
+DIR *fdopendir(int fd);
+
+/* 成功返回0，出错返回-1 */
+int closedir(DIR *dp);</code></pre>
+<h3 id="2-2-创建"><a href="#2-2-创建" class="headerlink" title="2.2 创建"></a>2.2 创建</h3><ul>
+<li>不能递归的创建目录<pre><code class="c">#include &lt;sys/stat.h&gt;
+</code></pre>
+</li>
+</ul>
+<p>/* 若成功返回0，若出错，则返回-1 */<br>int mkdir(const char *pathname, mode_t mode);<br>int mkdirat(int fd, const char *pathname, mode_t mode);</p>
+<pre><code>mode_t 参数说明
+
+ || 读 | 写 | 可执行
+:---:|:---:|:---:|:---:
+USR|S_IRUSE|S_IWUSR|S_IXUSR
+GRP|S_IRGRP|S_IWGRP|S_IXGRP
+OTHER|S_IROTH|S_IWOTH|S_IXOTH
+
+### 2.3 删除
+
+```c
+#include &lt;unistd.h&gt;
+
+/* 若成功返回0，失败返回-1 */
+int rmdir(const char *pathname);</code></pre>
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论。 </span>
+    </div>
+</article>
+
+
+
+<div class="article_copyright">
+    <p><span class="copy-title">文章标题:</span>C/C++基本使用</p>
+    
+    <p><span class="copy-title">本文作者:</span><a  title="YX">YX</a></p>
+    <p><span class="copy-title">发布时间:</span>2020-02-26, 00:15:26</p>
+    <p><span class="copy-title">最后更新:</span>2020-02-26, 00:15:26</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/02/26/basic_c/" title="C/C++基本使用">http://yx.com/2020/02/26/basic_c/</a>
+    <p>
+        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+    </p>
+</div>
+
+
+
     <div id="comments"></div>
 <link rel="stylesheet" href="https://jjeejj.github.io/css/gitment.css">
 
@@ -286,7 +370,7 @@
 
 <script>
     var gitment = new Gitment({
-        id: 'http://yx.com/', // 可选。默认为 location.href
+        id: 'http://yx.com/2020/02/26/basic_c/', // 可选。默认为 location.href
         owner: 'yx2010',
         repo: 'yx2010.github.io',
         oauth: {
@@ -296,6 +380,11 @@
     })
     gitment.render('comments')
 </script>
+
+
+
+
+
 
 
     </div>
